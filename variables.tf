@@ -1,3 +1,7 @@
+variable "region" {
+  default = "us-east-1"
+}
+
 variable "cw_log_group_name" {}
 
 variable "name_tag" {}
@@ -13,4 +17,3 @@ variable "instance_type_name" {}
 variable "key_pair_name" {}
 
 variable "iam_instance_profile" {}
-
