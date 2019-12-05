@@ -20,9 +20,9 @@ iam_instance_profile = "aws-elasticbeanstalk-ec2-role"
 
 # AWS cloudwatch Subscription filter
 #lambda_function_streams_name = 
-lambda_function_streams_arn = "arn:aws:lambda:us-east-1:875012586337:function:LogsToElasticsearch_test-domain"
+#lambda_function_streams_arn = "arn:aws:lambda:us-east-1:875012586337:function:LogsToElasticsearch_test-domain"
 
 
 # Log subscription filter name
-subscription_filter_name = "LogsToElasticsearch_test-domain"
-role_arn = "lambda_elasticsearch_execution role"
+#subscription_filter_name = "LogsToElasticsearch_test-domain"
+#role_arn = "lambda_elasticsearch_execution role"
