@@ -23,10 +23,10 @@ resource "aws_cloudwatch_log_stream" "cw_log_group_stream" {
 }
 
 
-resource "aws_cloudwatch_log_subscription_filter" "lambda_function_streams" {
-  name            = "${var.subscription_filter_name}"
-  role_arn        = "${var.role_arn}"
-  log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
-  filter_pattern  = "logtype test"
-  destination_arn = "${var.lambda_function_streams_arn}"
-}
+#resource "aws_cloudwatch_log_subscription_filter" "lambda_function_streams" {
+#  name            = "${var.subscription_filter_name}"
+#  role_arn        = "${var.role_arn}"
+#  log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
+#  filter_pattern  = "logtype test"
+#  destination_arn = "${var.lambda_function_streams_arn}"
+#}
