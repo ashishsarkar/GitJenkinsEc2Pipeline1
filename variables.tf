@@ -17,3 +17,9 @@ variable "instance_type_name" {}
 variable "key_pair_name" {}
 
 variable "iam_instance_profile" {}
+
+variable "lambda_function_streams_arn" {}
+
+variable "subscription_filter_name" {}
+
+variable "role_arn" {}
