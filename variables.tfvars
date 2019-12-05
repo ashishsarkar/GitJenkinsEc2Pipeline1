@@ -1,3 +1,8 @@
+# Updating region
+region = "us-east-1"
+
+
+
 # CloudWatch Log Group and Stream Details
 cw_log_group_name = "Nginx-Error"
 
