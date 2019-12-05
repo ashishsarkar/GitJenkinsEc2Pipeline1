@@ -14,7 +14,7 @@ email_tag = "ashish.sarkar@gmail.com"
 # EC2 Details
 ami_id_name = "ami-00068cd7555f543d5"
 instance_type_name = "t3.micro"
-key_pair_name = "kumail_kpr.ppk"
+key_pair_name = "kumail_kpr"
 iam_instance_profile = "aws-elasticbeanstalk-ec2-role"
 
 
