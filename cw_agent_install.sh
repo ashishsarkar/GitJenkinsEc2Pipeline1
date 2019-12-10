@@ -25,6 +25,5 @@ sudo echo "
         }
 }" >> /opt/aws/amazon-cloudwatch-agent/bin/config.json
 
-echo "completed installation"
+sudo chmod 444 /opt/aws/amazon-cloudwatch-agent/bin/config.json 
 systemctl enable amazon-cloudwatch-agent
-echo "check installation....................."
