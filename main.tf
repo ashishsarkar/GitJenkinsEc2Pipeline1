@@ -23,10 +23,23 @@ resource "aws_cloudwatch_log_stream" "cw_log_group_stream" {
 }
 
 
-#resource "aws_cloudwatch_log_subscription_filter" "lambda_function_streams" {
-#  name            = "${var.subscription_filter_name}"
-#  role_arn        = "${var.role_arn}"
-#  log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
-#  filter_pattern  = "logtype test"
-#  destination_arn = "${var.lambda_function_streams_arn}"
-#}
+data "aws_lambda_function" "logs_to_elasticsearch_logs" {
+  function_name = "${var.aws_lambda_function_name}"
+  qualifier = ""
+}
+
+resource "aws_lambda_permission" "logs_to_elasticsearch_logs" {
+  action        = "${var.aws_lambda_permission_action_name}"
+  function_name = "${data.aws_lambda_function.logs_to_elasticsearch_logs.function_name}"
+  principal     = "${var.aws_lambda_permission_action_principal}"
+  source_arn    = "${aws_cloudwatch_log_group.cw_log_group.arn}"
+}
+
+
+resource "aws_cloudwatch_log_subscription_filter" "logs_to_elasticsearch_logs" {
+  name            = "ElasticsearchStream-logs"
+  log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
+  filter_pattern  = ""  
+  destination_arn = "${data.aws_lambda_function.logs_to_elasticsearch_logs.arn}"
+  depends_on      = ["aws_lambda_permission.logs_to_elasticsearch_logs"]
+}
