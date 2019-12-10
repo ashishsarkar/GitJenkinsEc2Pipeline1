@@ -20,15 +20,11 @@ variable "iam_instance_profile" {}
 
 variable "aws_lambda_function_name" {}
 
-variable "aws_lambda_function_name" {}
-
 
 variable "aws_lambda_permission_action_name" {}
 
 
 variable "aws_lambda_permission_action_principal" {}
-
-
 
 
 variable "lambda_function_streams_arn" {}
