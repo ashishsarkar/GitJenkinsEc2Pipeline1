@@ -26,4 +26,4 @@ sudo echo "
 }" >> /opt/aws/amazon-cloudwatch-agent/bin/config.json
 
 sudo chmod 444 /opt/aws/amazon-cloudwatch-agent/bin/config.json 
-systemctl enable amazon-cloudwatch-agent
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a start
