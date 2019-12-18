@@ -2,9 +2,9 @@
 cw_log_group_name = "Nginx-Error"
 
 # tags
-name_tag = "Jenkins-Minesh-Demo-Machine"
+name_tag = "Jenkins-CW-Machine"
 owner_tag = "Ashish Sarkar"
-email_tag = "ashish.sarkar@gmail.com"
+email_tag = "ashish.sarkar@t-sys.com"
 
 # EC2 Details
 ami_id_name = "ami-00068cd7555f543d5"
