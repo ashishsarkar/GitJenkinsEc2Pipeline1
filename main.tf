@@ -17,10 +17,10 @@ resource "aws_cloudwatch_log_group" "cw_log_group" {
 # }
 
 
-resource "aws_cloudwatch_log_stream" "cw_log_group_stream" {
-  name           = "${aws_instance.cw_agent_instance.id}"
-  log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
-}
+# resource "aws_cloudwatch_log_stream" "cw_log_group_stream" {
+#   name           = "${aws_instance.cw_agent_instance.id}"
+#   log_group_name = "${aws_cloudwatch_log_group.cw_log_group.name}"
+# }
 
 
 data "aws_lambda_function" "logs_to_elasticsearch_logs" {
