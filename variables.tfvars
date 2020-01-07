@@ -14,7 +14,7 @@ iam_instance_profile = "aws-elasticbeanstalk-ec2-role"
 
 
 # AWS Lambda Function
-aws_lambda_function_name = "arn:aws:lambda:us-east-1:xxxxxxxx:function:LogsToElasticsearch_test-elastic-search-cluster"
+aws_lambda_function_name = "arn:aws:lambda:us-east-1:875012586337:function:LogsToElasticsearch_test-elastic-search-cluster"
 
 
 # AWS Lambda Permissions
