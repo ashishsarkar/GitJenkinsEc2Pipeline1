@@ -23,7 +23,7 @@ aws_lambda_permission_action_principal = "logs.us-east-1.amazonaws.com"
 
 
 # AWS cloudwatch Subscription filter
-lambda_function_streams_arn = "arn:aws:lambda:us-east-1:xxxxxxxx:function:LogsToElasticsearch_test-elastic-search-cluster"
+lambda_function_streams_arn = "arn:aws:lambda:us-east-1:875012586337:function:LogsToElasticsearch_test-elastic-search-cluster"
 
 # Log subscription filter name
 subscription_filter_name = "LogsToElasticsearch_test-domain"
